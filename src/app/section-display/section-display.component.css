@@ -1,0 +1,31 @@
+.container{
+    width: 95%;
+    height: 5vh;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.section-display{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #5E5873;
+}
+
+.log-out{
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    color:#D62196;
+    cursor: pointer;
+}
+
+
+.log-out-btn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
