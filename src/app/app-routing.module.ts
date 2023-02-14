@@ -15,6 +15,7 @@ import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 const appRoutes: Routes = [
   {path: ' ', component: LoginPageComponent},
   {path: 'signup', component: SignupPageComponent},
+  {path: 'jobs', loadChildren: () => import('./jobs/jobs.module').then((s) => s.JobsModule)},
   {path: 'jobs', component: JobPageComponent ,children : [
     {path: 'my-application', component: MyApplicationComponent},
     {path: 'my-offer', component: MyOfferComponent},

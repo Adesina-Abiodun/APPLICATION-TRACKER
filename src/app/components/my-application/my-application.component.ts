@@ -7,7 +7,20 @@ import { myApplication } from '../my-application.module';
   styleUrls: ['./my-application.component.css']
 })
 
-export class MyApplicationComponent {
+export class MyApplicationComponent  {
+allJobResult: any;
+  // ngOnInit: void(){
+
+  // }
+  constructor(private service: jobService){  }
+
+
+  fetchJobs(){
+    this.service.fetchALlJobs().subscribe((res:any) =>{
+      this.allJobResult = res;
+    })
+    return this.allJobResult;
+  }
     Applications : myApplication[] = [
 
       new myApplication('../../../assets/unsplash_DBe29bswzpk.png', 'ABC Company', 'Senior Level Product Designer', 'United Arab Emirates', 1000000, ['figma', 'Sketch', 'Adobe', 'Illustrator', 'Photoshop', 'Imvision'],

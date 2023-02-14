@@ -17,6 +17,7 @@ import { SIDEBARComponent } from './components/sidebar/sidebar.component';
 import { JobPageComponent } from './pages/job-page/job-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
+import { DahboardComponent } from './dahboard/dahboard.component';
 
 
 
@@ -38,7 +39,8 @@ import { SignupPageComponent } from './pages/signup-page/signup-page.component';
     MyHistoryComponent,
     LoginPageComponent,
     SignupPageComponent,
-    JobPageComponent
+    JobPageComponent,
+    DahboardComponent
   ],
   imports: [
     BrowserModule,
