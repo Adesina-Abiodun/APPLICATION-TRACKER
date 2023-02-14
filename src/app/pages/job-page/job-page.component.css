@@ -1,0 +1,16 @@
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.sidebar-section{
+    width: 16%;
+}
+
+.child{
+    width: 80%;
+    margin-bottom: 50px;
+}

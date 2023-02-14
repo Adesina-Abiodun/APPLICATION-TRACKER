@@ -1,0 +1,30 @@
+.container{
+    height: 10vh;
+    margin: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.job-logo{
+    border: 1px solid black;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.job-location-salary{
+    border: 1px solid black;
+    width: 30%;
+    height: 100%;
+}
+
+.job-tools-date{
+    border: 1px solid black;
+    width: 30%;
+    height: 100%;
+}

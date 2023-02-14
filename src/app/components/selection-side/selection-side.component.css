@@ -1,0 +1,61 @@
+.container{
+    width: 95%;
+    height: 30px;
+    border-color: #DEE2E6;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+ .section-height select{
+    height: 100%;
+    width: 68px;
+    height: 32px;
+    border: 1px solid #DEE2E6;
+    border-radius: 5px;
+    color: #DEE2E6;
+ }
+
+ .recent select{
+    Width: 95px;
+    Height:32px;
+    border-radius: 5px;
+ }
+
+ .search-bar{
+    border-radius: 6px;
+    border: 1px solid #DEE2E6;
+    outline: none;
+    color: #DEE2E6;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+ }
+
+ .search-bar input{
+    height: 32px;
+    width: 498px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #DEE2E6;
+    margin-left: 5px;
+ }
+
+ .category > select, .reading > select, .tag > select{
+    width: 135px;
+ }
+
+ .filter-btn{
+    background: #DACFE5;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+ }
