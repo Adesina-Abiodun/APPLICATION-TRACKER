@@ -1,5 +1,9 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+#Ignore Package-lock and angular binary files
+package-lock.json
+/.angular
+
 # Compiled output
 /dist
 /tmp
