@@ -37,6 +37,8 @@ nav{
 
 .nav-list a{
     text-decoration: none;
+    color: #5E5873;
+    ;
 }
 
 .active, .nav-list a:hover{

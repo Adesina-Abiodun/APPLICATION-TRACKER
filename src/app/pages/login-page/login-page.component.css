@@ -34,6 +34,7 @@
 .sign-up-btn{
     height: 5vh;
     width: 15vw;
+    text-align: center;
     margin-bottom: 40px;
     background-color: #440F7C;
     color: white;

@@ -15,15 +15,16 @@
 }
 
 .log-out{
-    display: flex;
-    align-items: center;
-    color:#D62196;
-    cursor: pointer;
+   width: 80px;
 }
 
 
 .log-out-btn{
-    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #D62196;
     border: none;
     cursor: pointer;
 }
