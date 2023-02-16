@@ -1,4 +1,5 @@
 <div class="container" *ngFor="let myApplication of Applications">
+    <a routerLink="#">
         <div class="job-logo">
             <img src="{{myApplication.companyLogo}}" alt="">
             <div class="job-title">
@@ -27,13 +28,10 @@
                 </ul>
             </div>
 
-            <div class="date">
-                    <select name="" id="">
-                        <option value="">Actions</option>
-                        <option value=""><button>Accept</button></option>
-                        <option value=""><button>Reject</button></option>
-                    </select>
+            <div class="time">
+                <p>{{myApplication.time}}</p>
             </div>
         </div>
+    </a>
 </div>
 

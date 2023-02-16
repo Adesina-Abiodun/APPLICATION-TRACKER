@@ -1,0 +1,68 @@
+.sign-up{
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.sign-up-center{
+    width: 35vw;
+    height: 80vh;
+    margin: 20px auto;
+    color: #5E5873;
+    /* border: 1px solid black; */
+}
+.signup-h1{
+    text-align: center;
+}
+.label{
+    font-size: 1.5vw;
+}
+.sign-up-input{
+    width: 35vw;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 1vw;
+    margin-top: 1vh;
+    font-family: "Poppins";
+    font-size: 15px;
+    color: #5E5873;
+    box-shadow: 0 0 2px gray;
+}
+.sign-up-btn{
+    height: 5vh;
+    width: 15vw;
+    background-color: #440F7C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5vh;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.forget-password-div{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forget-password-div a{
+    text-decoration: none;
+}
+
+
+.label:after {
+    content:" *";
+    color: red;
+  }
+
+  a{
+    text-decoration: none;
+  }

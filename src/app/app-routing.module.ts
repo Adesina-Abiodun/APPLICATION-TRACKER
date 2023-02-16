@@ -1,11 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { JobsComponent } from './components/jobs/jobs.component';
-import { MyApplicationComponent } from './components/my-application/my-application.component';
-import { MyHistoryComponent } from './components/my-history/my-history.component';
-import { MyOfferComponent } from './components/my-offer/my-offer.component';
-import { MyProfileComponent } from './components/my-profile/my-profile.component';
-import { JobPageComponent } from './pages/job-page/job-page.component';
+import { ChangePasswordComponent } from './pages/change-password/change-password.component';
+import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
+
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 
@@ -13,15 +10,12 @@ import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 
 
 const appRoutes: Routes = [
-  {path: ' ', component: LoginPageComponent},
+  {path: '', component: LoginPageComponent},
   {path: 'signup', component: SignupPageComponent},
-  {path: 'jobs', component: JobPageComponent ,children : [
-    {path: 'my-application', component: MyApplicationComponent},
-    {path: 'my-offer', component: MyOfferComponent},
-    {path: 'my-jobs', component: JobsComponent},
-    {path: 'my-profile', component: MyProfileComponent},
-    {path: 'my-history', component: MyHistoryComponent},
-  ]}]
+  {path: 'forgot-password', component: ForgotPasswordComponent},
+  {path: 'change-password', component: ChangePasswordComponent},
+  {path: 'jobs', loadChildren: () => import('./job-routing/job-routing.module').then((s) => s.JobRoutingModule)},
+]
  
 
 @NgModule({

@@ -8,7 +8,7 @@
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
-    font-family: sans-serif;
+    align-items: center;
 }
 
 .container a{
@@ -19,26 +19,36 @@
 }
 
 .job-logo{
-    /* border: 1px solid black; */
     width: 30%;
-    height: 100%;
+    height: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: #5E5873;
 }
 
+.companyName{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
 .role{
+    margin: 0;
+    padding: 0;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .job-location-salary{
     /* border: 1px solid black; */
-    width: 30%;
+    width: 33%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-weight: 400;
+    font-size: 12px;
 }
 
 .job-tools-date{
@@ -61,22 +71,19 @@
     flex-wrap: wrap;
     align-content: center;
     font-size: 9px;
+    font-weight: 400;
 }
 
 .listed-tools li{
     width: 15%;
-    border: 2px solid #D62196;
+    border: 1px solid #D62196;
     border-radius: 5px;
     color: #D62196;
     text-align: center;
     margin: 5px;
-    padding: 7px;
-    font-weight: bold;
+    padding: 10px;
 }
 
-.companyName{
-    font-size: 15px;
-}
 
 #salary{
     background-color: #F7D3EA;
@@ -103,10 +110,11 @@
 }
 
 
-.date select{
+.action select{
     color: #440F7C;
     border: none;
     background-color: #DACFE5;
     padding: 10px;
     border-radius: 5px;
+    font-size: 12px;
 }

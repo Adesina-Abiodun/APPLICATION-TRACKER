@@ -16,12 +16,12 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
 }
+
 
 .nav-logo{
     width: 20%;
@@ -32,8 +32,16 @@ nav{
 .nav-list{
     display: flex;
     justify-content: space-around;
+    font-size: 12px;
 }
 
+.nav-list a{
+    text-decoration: none;
+}
+
+.active, .nav-list a:hover{
+    color: #D62196;
+}
 .nav-list li{
     padding-right: 30px;
     list-style: none
@@ -45,4 +53,10 @@ nav{
     color: white;
     Padding: 10px;
     border: none;
+}
+
+.nav-btn a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }

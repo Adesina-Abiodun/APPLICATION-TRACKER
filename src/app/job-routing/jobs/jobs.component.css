@@ -7,7 +7,6 @@
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     display: flex;
-    font-family: sans-serif;
 }
 
 .container a{
@@ -27,18 +26,31 @@
     color: #5E5873;
 }
 
+
+
+.companyName{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
 .role{
+    margin: 0;
+    padding: 0;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .job-location-salary{
     /* border: 1px solid black; */
-    width: 30%;
+    width: 33%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-weight: 400;
 }
+
 
 .job-tools-date{
     /* border: 1px solid black; */
@@ -65,18 +77,15 @@
 
 .listed-tools li{
     width: 15%;
-    border: 2px solid #D62196;
+    border: 1px solid #D62196;
     border-radius: 5px;
     color: #D62196;
     text-align: center;
     margin: 5px;
-    padding: 7px;
-    font-weight: bold;
+    padding: 10px;
 }
 
-.companyName{
-    font-size: 15px;
-}
+
 
 .location , #salary{
     background-color: #F7D3EA;
@@ -97,4 +106,10 @@
 
 #salary{
     text-align: center;
+}
+
+.time{
+    font-style: normal;
+    font-size: 10px;
+    font-weight: 300;
 }
