@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { myApplication } from '../my-application/my-application.module';
+import { myApplication } from '../../Models/my-application.module';
 
 @Component({
   selector: 'app-jobs',

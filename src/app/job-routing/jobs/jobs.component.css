@@ -1,6 +1,5 @@
 .container{
     width: 100%;
-    height: 15vh;
     margin-bottom: 20px;
     padding: 0 5px;
     background: #FFFFFF;
@@ -19,7 +18,6 @@
 .job-logo{
     /* border: 1px solid black; */
     width: 30%;
-    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -63,7 +61,7 @@
 
 .tools{
     width: 60%;
-    height: 100%;
+    font-weight: 400;
 }
 
 .listed-tools{
@@ -76,13 +74,12 @@
 }
 
 .listed-tools li{
-    width: 15%;
     border: 1px solid #D62196;
     border-radius: 5px;
     color: #D62196;
     text-align: center;
-    margin: 5px;
-    padding: 10px;
+    margin: 2px;
+    padding: 5px;
 }
 
 

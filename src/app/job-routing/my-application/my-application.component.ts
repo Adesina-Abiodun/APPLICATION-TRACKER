@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { myApplication } from './my-application.module';
+import { Component, OnInit } from '@angular/core';
+import { jobService} from 'src/app/service/jobService.service';
+import { JobApplication } from '../../Models/my-application.module';
 
 @Component({
   selector: 'app-my-application',
@@ -7,22 +8,14 @@ import { myApplication } from './my-application.module';
   styleUrls: ['./my-application.component.css']
 })
 
-export class MyApplicationComponent {
-    Applications : myApplication[] = [
+export class MyApplicationComponent implements OnInit {
+     jobApplication: JobApplication[] = []
 
-      new myApplication('../../../assets/unsplash_DBe29bswzpk.png', 'ABC Company', 'Senior Level Product Designer', 'United Arab Emirates', 1000000, ['figma', 'Sketch', 'Adobe', 'Illustrator', 'Photoshop', 'Imvision'],
-       'Applied 3 days ago'),
+    constructor(private jobService: jobService){
 
-       new myApplication('../../../assets/unsplash_DBe29bswzpk.png', 'ABC Company', 'Senior Level Product Designer', 'United Arab Emirates', 1000000, ['figma', 'Sketch', 'Adobe', 'Illustrator', 'Photoshop', 'Imvision'],
-       'Applied 3 days ago'),
+    }
 
-      new myApplication('../../../assets/unsplash_DBe29bswzpk.png', 'ABC Company', 'Senior Level Product Designer', 'United Arab Emirates', 1000000, ['figma', 'Sketch', 'Adobe', 'Illustrator', 'Photoshop', 'Imvision'],
-       'Applied 3 days ago'),
-
-       new myApplication('../../../assets/unsplash_DBe29bswzpk.png', 'ABC Company', 'Senior Level Product Designer', 'United Arab Emirates', 1000000, ['figma', 'Sketch', 'Adobe', 'Illustrator', 'Photoshop', 'Imvision'],
-       'Applied 3 days ago'),
-
-       new myApplication('../../../assets/unsplash_DBe29bswzpk.png', 'ABC Company', 'Senior Level Product Designer', 'United Arab Emirates', 1000000, ['figma', 'Sketch', 'Adobe', 'Illustrator', 'Photoshop', 'Imvision'],
-       'Applied 3 days ago'),
-    ]
+    ngOnInit(): void{
+      this.jobApplication = this.jobService.getJobsApplication();
+    }
 }
