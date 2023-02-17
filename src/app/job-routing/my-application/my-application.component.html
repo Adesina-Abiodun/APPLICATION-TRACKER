@@ -1,10 +1,10 @@
-<div class="container">
-    <a routerLink="#" *ngFor="let jobs of jobApplication ">
+<div class="container" *ngFor="let jobs of jobApplication ">
+    <a routerLink="/job-description" >
         <div class="job-logo">
             <img src="{{jobs.image}}" alt="">
             <div class="job-title">
                 <p class="companyName">{{jobs.companyName}}</p>
-                <p class="role">{{jobs.JobLevel}}</p>
+                <p class="role">{{jobs.jobLevel}}</p>
             </div>
         </div>
 

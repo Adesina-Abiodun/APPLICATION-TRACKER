@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { myApplication } from '../../Models/my-application.module';
+import { JobApplication} from '../../Models/my-application.module';
 
 @Component({
   selector: 'app-jobs',
@@ -8,21 +8,34 @@ import { myApplication } from '../../Models/my-application.module';
 })
 export class JobsComponent {
 
-  Applications : myApplication[] = [
+  jobApplications : JobApplication[] = [
 
-    new myApplication('../../../assets/unsplash_DBe29bswzpk.png', 'ABC Company', 'Senior Level Product Designer', 'United Arab Emirates', 1000000, ['figma', 'Sketch', 'Adobe', 'Illustrator', 'Photoshop', 'Imvision'],
-     'Posted 8 hours ago'),
-
-     new myApplication('../../../assets/unsplash_DBe29bswzpk.png', 'ABC Company', 'Senior Level Product Designer', 'United Arab Emirates', 1000000, ['figma', 'Sketch', 'Adobe', 'Illustrator', 'Photoshop', 'Imvision'],
-     'Posted 8 hours ago'),
-
-    new myApplication('../../../assets/unsplash_DBe29bswzpk.png', 'ABC Company', 'Senior Level Product Designer', 'United Arab Emirates', 1000000, ['figma', 'Sketch', 'Adobe', 'Illustrator', 'Photoshop', 'Imvision'],
-     'Posted 8 hours ago'),
-
-     new myApplication('../../../assets/unsplash_DBe29bswzpk.png', 'ABC Company', 'Senior Level Product Designer', 'United Arab Emirates', 1000000, ['figma', 'Sketch', 'Adobe', 'Illustrator', 'Photoshop', 'Imvision'],
-     'Posted 8 hours ago'),
-
-     new myApplication('../../../assets/unsplash_DBe29bswzpk.png', 'ABC Company', 'Senior Level Product Designer', 'United Arab Emirates', 1000000, ['figma', 'Sketch', 'Adobe', 'Illustrator', 'Photoshop', 'Imvision'],
-     'Posted 8 hours ago'),
+    {
+      image: "../../../assets/unsplash_7SPDdXRi1u4.png",
+      companyName: "ABC Company",
+      jobLevel: "Senior Product designer",
+      country: "United Arab Emiates",
+      proposedSalary: 10000000,
+      skillSet: ['figma', 'Sketch', 'Adobe XD','Illustrator', 'Photoshop', 'InVision','WordPress', 'Anywhere 365', '3D Animations'],
+      applicationDate: 'Posted 8 hours ago',
+    },
+    {
+      image: "../../../assets/unsplash_7SPDdXRi1u4.png",
+      companyName: "ABC Company",
+      jobLevel: "Senior Product designer",
+      country: "United Arab Emiates",
+      proposedSalary: 10000000,
+      skillSet: ['figma', 'Sketch', 'Adobe XD','Illustrator', 'Photoshop', 'InVision','WordPress', 'Anywhere 365', '3D Animations'],
+      applicationDate: 'Posted 8 hours ago',
+    },
+    {
+      image: "../../../assets/unsplash_7SPDdXRi1u4.png",
+      companyName: "ABC Company",
+      jobLevel: "Senior Product designer",
+      country: "United Arab Emiates",
+      proposedSalary: 10000000,
+      skillSet: ['figma', 'Sketch', 'Adobe XD','Illustrator', 'Photoshop', 'InVision','WordPress', 'Anywhere 365', '3D Animations'],
+      applicationDate: 'Posted 8 hours ago',
+    }
   ]
 }

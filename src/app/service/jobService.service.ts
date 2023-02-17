@@ -8,14 +8,15 @@ export class jobService {
 
   private jobApplication: JobApplication[] = [
     {
-    image: "assests/logo.ng",
+    image: "../../assets/unsplash_DBe29bswzpk.png",
     companyName: "ABC Company",
-    JobLevel: "Senior Product designer",
-    country: "United State",
+    jobLevel: "Senior Product designer",
+    country: "United Arab Emiates",
     proposedSalary: 10000000,
-    skillSet: ['figma', 'figma', 'figma'],
+    skillSet: ['figma', 'Sketch', 'Adobe XD','Illustrator', 'Photoshop', 'InVision','WordPress', 'Anywhere 365', '3D Animations'],
     applicationDate: 'Applied 3 days ago',
-  }
+  },
+  
 ]
 
   constructor() { }

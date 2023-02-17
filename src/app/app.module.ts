@@ -19,6 +19,7 @@ import { MyProfileComponent } from './job-routing/my-profile/my-profile.componen
 import { MyHistoryComponent } from './job-routing/my-history/my-history.component';
 import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
 import { ChangePasswordComponent } from './pages/change-password/change-password.component';
+import { JobDescriptionComponent } from './components/job-description/job-description.component';
 
 
 
@@ -42,7 +43,8 @@ import { ChangePasswordComponent } from './pages/change-password/change-password
     SignupPageComponent,
     JobPageComponent,
     ForgotPasswordComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    JobDescriptionComponent
   ],
   imports: [
     BrowserModule,
