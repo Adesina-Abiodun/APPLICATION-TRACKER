@@ -65,7 +65,6 @@
 }
 
 .listed-tools{
-    width: 100%;
     list-style-type: none;
     padding: 2px;
     display: flex;
@@ -100,8 +99,8 @@
 }
 
 .location{
-    width: 40% ;
-    padding: 0 5px;
+    width: 45% ;
+    padding: 0 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -109,4 +108,20 @@
 
 #salary{
     text-align: center;
+}
+
+.time{
+    color: #152536;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.action select{
+    color: #440F7C;
+    border: none;
+    background-color: #DACFE5;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
 }

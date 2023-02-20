@@ -27,6 +27,7 @@
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .information-edit h3{

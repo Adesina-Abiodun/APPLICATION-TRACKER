@@ -4,7 +4,7 @@ import { JobApplication} from '../../Models/my-application.module';
 @Component({
   selector: 'app-my-history',
   templateUrl: './my-history.component.html',
-  styleUrls: ['./my-history.component.css']
+  styleUrls: ['../my-application/my-application.component.css']
 })
 export class MyHistoryComponent {
   JobApplications : JobApplication[] = [

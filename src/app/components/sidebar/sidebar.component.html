@@ -27,7 +27,7 @@
                 routerLinkActive="active"
                 class="sidebar-item">
                 <img src="../../../assets/check-circle (1).png" alt="Job-icon">
-                <p>My Job</p>
+                <p>Jobs</p>
             </a>
         </div>
 
@@ -60,4 +60,9 @@
             </a>
         </div>
     </div>
+</div>
+
+<div class="progress-bar" *ngIf="isFilter">
+    <p>Your profile is 100% complete</p>
+    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
 </div>

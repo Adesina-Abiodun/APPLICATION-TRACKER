@@ -4,7 +4,7 @@ import { JobApplication} from '../../Models/my-application.module';
 @Component({
   selector: 'app-my-offer',
   templateUrl: './my-offer.component.html',
-  styleUrls: ['./my-offer.component.css']
+  styleUrls: ['./my-offer.component.css','../my-application/my-application.component.css']
 })
 export class MyOfferComponent {
   JobApplications : JobApplication[] = [

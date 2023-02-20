@@ -44,6 +44,21 @@
     font-size: 20px;
 }
 
+
+.login-btn{
+    height: 5vh;
+    width: 15vw;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 40px;
+    background-color: #440F7C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
 .forget-password-div{
     margin-bottom: 20px;
     margin-top: 20px;

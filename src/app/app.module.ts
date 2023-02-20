@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatProgressBarModule} from '@angular/material/progress-bar'
+import {MatDialogModule} from '@angular/material/dialog'
 
 
 import { AppComponent } from './app.component';
@@ -20,6 +23,13 @@ import { MyHistoryComponent } from './job-routing/my-history/my-history.componen
 import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
 import { ChangePasswordComponent } from './pages/change-password/change-password.component';
 import { JobDescriptionComponent } from './components/job-description/job-description.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PersonalInfoComponent } from './components/personal-info/personal-info.component';
+import { AboutMeEditComponent } from './components/about-me-edit/about-me-edit.component';
+import { WorkExperienceEditComponent } from './components/work-experience-edit/work-experience-edit.component';
+import { ProjectsEditComponent } from './components/projects-edit/projects-edit.component';
+import { EducationInfoEditComponent } from './components/education-info-edit/education-info-edit.component';
+import { DocumentsEditComponent } from './components/documents-edit/documents-edit.component';
 
 
 
@@ -44,11 +54,21 @@ import { JobDescriptionComponent } from './components/job-description/job-descri
     JobPageComponent,
     ForgotPasswordComponent,
     ChangePasswordComponent,
-    JobDescriptionComponent
+    JobDescriptionComponent,
+    PersonalInfoComponent,
+    AboutMeEditComponent,
+    WorkExperienceEditComponent,
+    ProjectsEditComponent,
+    EducationInfoEditComponent,
+    DocumentsEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatProgressBarModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

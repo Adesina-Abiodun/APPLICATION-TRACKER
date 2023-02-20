@@ -4,7 +4,7 @@ import { JobApplication} from '../../Models/my-application.module';
 @Component({
   selector: 'app-jobs',
   templateUrl: './jobs.component.html',
-  styleUrls: ['./jobs.component.css']
+  styleUrls: ['../my-application/my-application.component.css']
 })
 export class JobsComponent {
 
