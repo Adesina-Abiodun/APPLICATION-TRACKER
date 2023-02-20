@@ -27,7 +27,7 @@
                 routerLinkActive="active"
                 class="sidebar-item">
                 <img src="../../../assets/check-circle (1).png" alt="Job-icon">
-                <p>My Job</p>
+                <p>Jobs</p>
             </a>
         </div>
 
@@ -53,11 +53,16 @@
     
         <div class="log-out">
             <a 
-                routerLink="/login-page"
-                routerLinkActive="active">
+                class="sidebar-item"
+                routerLink="">
                 <img src="../../assets/power (1).png" alt="Logout-icon">
                 <p>Logout</p>
             </a>
         </div>
     </div>
+</div>
+
+<div class="progress-bar" *ngIf="isFilter">
+    <p>Your profile is 100% complete</p>
+    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
 </div>

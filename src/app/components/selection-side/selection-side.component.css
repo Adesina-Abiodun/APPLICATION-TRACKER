@@ -6,9 +6,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: sans-serif;
     margin-bottom: 30px;
-    outline: none;
+    font-weight: 500;
+    font-size: 13px
 }
 
  .section-height select{
@@ -17,7 +17,7 @@
     height: 32px;
     border: 1px solid #DEE2E6;
     border-radius: 5px;
-    color: #DEE2E6;
+    color: black;
  }
 
  .recent select{
@@ -29,8 +29,9 @@
  .search-bar{
     border-radius: 6px;
     border: 1px solid #DEE2E6;
+    background-color: #fff;
     outline: none;
-    color: #DEE2E6;
+    color: black;
     display: flex;
     align-items: center;
     padding: 0 20px;
@@ -42,7 +43,7 @@
     border-radius: 6px;
     border: none;
     outline: none;
-    color: #DEE2E6;
+    color: black;
     margin-left: 5px;
  }
 

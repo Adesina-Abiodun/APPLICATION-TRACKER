@@ -1,0 +1,67 @@
+.personal-info-edit{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06);
+    margin: 10px auto;
+    width: 30vw;
+    padding: 20px;
+    border-radius: 6px;
+    position: absolute;
+    top: 5px;
+}
+
+
+.personal-info-details-edit{
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-info-div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+
+.personal-info{
+    padding-bottom: 25px;
+}
+
+label:after {
+    content:" *";
+    color: red;
+  }
+
+  .personal-info-input{
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 10px; */
+  }
+
+  .personal-info-input input{
+    margin-bottom: 15px;
+    padding-bottom: 14px;
+  }
+
+
+  .personal-info-save-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .personal-info-save-btn button{
+    background: #440F7C;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .personal-info-save-btn button:hover{
+    color: #FFFFFF;
+    background-color: green;
+  }
+
+  
