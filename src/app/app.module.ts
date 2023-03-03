@@ -27,11 +27,11 @@ import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password
 import { ChangePasswordComponent } from './pages/change-password/change-password.component';
 import { JobDescriptionComponent } from './components/job-description/job-description.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PersonalInfoComponent } from './components/personal-info/personal-info.component';
-import { AboutMeEditComponent } from './components/about-me-edit/about-me-edit.component';
+import { PersonalInfoComponent } from './modals/personal-info/personal-info.component';
+import { AboutMeEditComponent } from './modals/about-me-edit/about-me-edit.component';
 import { WorkExperienceEditComponent } from './components/work-experience-edit/work-experience-edit.component';
-import { EducationInfoEditComponent } from './components/education-info-edit/education-info-edit.component';
-import { DocumentsEditComponent } from './components/documents-edit/documents-edit.component';
+import { EducationInfoEditComponent } from './modals/education-info-edit/education-info-edit.component';
+import { DocumentsEditComponent } from './modals/documents-edit/documents-edit.component';
 import { ProfileSection1Component } from './components/P.sections/profile-section1/profile-section1.component';
 import { AboutMeComponent } from './components/P.sections/about-me/about-me.component';
 import { WorkExpComponent } from './components/P.sections/work-exp/work-exp.component';
@@ -40,7 +40,7 @@ import { EduHistoryComponent } from './components/P.sections/edu-history/edu-his
 import { DocsComponent } from './components/P.sections/docs/docs.component';
 import { ValidationService } from './Service/validation.service';
 import { AccountCreatedComponent } from './pages/account-created/account-created.component';
-import { ProjectEditComponent } from './components/project-edit/project-edit.component';
+import { ProjectEditComponent } from './modals/project-edit/project-edit.component';
 
 
 

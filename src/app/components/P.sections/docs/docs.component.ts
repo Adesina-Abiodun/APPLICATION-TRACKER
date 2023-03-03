@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ProfileServiceService } from 'src/app/Service/profile-service.service';
-import { DocumentsEditComponent } from '../../documents-edit/documents-edit.component';
+import { DocumentsEditComponent } from '../../../modals/documents-edit/documents-edit.component';
 
 @Component({
   selector: 'app-docs',

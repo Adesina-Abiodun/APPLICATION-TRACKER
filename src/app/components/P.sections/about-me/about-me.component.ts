@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ProfileServiceService } from 'src/app/Service/profile-service.service';
-import { AboutMeEditComponent } from '../../about-me-edit/about-me-edit.component';
+import { AboutMeEditComponent } from '../../../modals/about-me-edit/about-me-edit.component';
 
 @Component({
   selector: 'app-about-me',

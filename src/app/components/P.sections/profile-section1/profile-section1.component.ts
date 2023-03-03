@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ProfileServiceService } from 'src/app/Service/profile-service.service';
-import { PersonalInfoComponent } from '../../personal-info/personal-info.component';
+import { PersonalInfoComponent } from '../../../modals/personal-info/personal-info.component';
 
 @Component({
   selector: 'app-profile-section1',

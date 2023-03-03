@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { PersonalInfoComponent } from 'src/app/components/personal-info/personal-info.component';
+import { PersonalInfoComponent } from 'src/app/modals/personal-info/personal-info.component';
 
 
 @Component({

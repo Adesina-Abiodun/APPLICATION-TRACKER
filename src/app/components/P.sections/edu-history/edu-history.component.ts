@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ProfileServiceService } from 'src/app/Service/profile-service.service';
-import { EducationInfoEditComponent } from '../../education-info-edit/education-info-edit.component';
+import { EducationInfoEditComponent } from '../../../modals/education-info-edit/education-info-edit.component';
 
 @Component({
   selector: 'app-edu-history',

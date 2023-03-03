@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ProfileServiceService } from 'src/app/Service/profile-service.service';
-import { ProjectEditComponent } from '../../project-edit/project-edit.component';
+import { ProjectEditComponent } from '../../../modals/project-edit/project-edit.component';
 
 @Component({
   selector: 'app-projects',
