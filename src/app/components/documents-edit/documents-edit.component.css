@@ -1,3 +1,22 @@
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1040; 
+    backdrop-filter: blur(10px); /* Add a blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Add a blur effect for older webkit browsers */
+    transition: all ease 0.5s;
+    overflow: hidden;
+  }
+
+
+
+
+
+
 .main-container{
     width: 60vw;
     margin: 50px auto;
@@ -11,6 +30,14 @@
     border-radius: 6px;
     color: #5E5873;
     font-family: 'Poppins';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 0.5s;
+    border-radius: 6px;
+    font-family: 'poppins';
+    z-index: 1050;
 }
 
 .close-btn-div{
