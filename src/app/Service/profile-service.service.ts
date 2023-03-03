@@ -7,6 +7,8 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class ProfileServiceService {
 
+  isOpen = false
+
   constructor(private dialog: MatDialog) { }
 
   openDialog(e: ComponentType<unknown>) {

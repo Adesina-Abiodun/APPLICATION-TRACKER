@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ProfileServiceService } from 'src/app/Service/profile-service.service';
+import { EducationInfoEditComponent } from '../../education-info-edit/education-info-edit.component';
 
 @Component({
   selector: 'app-edu-history',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['../../../job-routing/my-profile/my-profile.component.css']
 })
 export class EduHistoryComponent {
+
+  constructor(private profileService: ProfileServiceService){
+  }
+  
+  openModal(){
+    this.profileService.openDialog(EducationInfoEditComponent)
+  }
 
 }

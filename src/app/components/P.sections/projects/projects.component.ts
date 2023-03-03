@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ProfileServiceService } from 'src/app/Service/profile-service.service';
+import { ProjectEditComponent } from '../../project-edit/project-edit.component';
 
 @Component({
   selector: 'app-projects',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
 
+
+  constructor(private profileService: ProfileServiceService){
+  }
+  
+  openModal(){
+    this.profileService.openDialog(ProjectEditComponent)
+  }
 }

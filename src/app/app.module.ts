@@ -40,6 +40,7 @@ import { EduHistoryComponent } from './components/P.sections/edu-history/edu-his
 import { DocsComponent } from './components/P.sections/docs/docs.component';
 import { ValidationService } from './Service/validation.service';
 import { AccountCreatedComponent } from './pages/account-created/account-created.component';
+import { ProjectEditComponent } from './components/project-edit/project-edit.component';
 
 
 
@@ -76,7 +77,8 @@ import { AccountCreatedComponent } from './pages/account-created/account-created
     ProjectsComponent,
     EduHistoryComponent,
     DocsComponent,
-    AccountCreatedComponent
+    AccountCreatedComponent,
+    ProjectEditComponent
   ],
   imports: [
     BrowserModule,
