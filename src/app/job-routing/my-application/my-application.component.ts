@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-// import { jobService} from 'src/app/service/jobService.service';
+import { Component, OnInit, Input } from '@angular/core';
+import { JobListingService } from 'src/app/Service/job-listing.service';
 import { JobApplication } from '../../Models/my-application.module';
 
 @Component({
@@ -9,32 +9,37 @@ import { JobApplication } from '../../Models/my-application.module';
 })
 
 export class MyApplicationComponent implements OnInit {
-     jobApplication: JobApplication[] = [
-      {
-        image: "../../assets/unsplash_DBe29bswzpk.png",
-        companyName: "ABC Company",
-        jobLevel: "Senior Product designer",
-        country: "United Arab Emiates",
-        proposedSalary: 10000000,
-        skillSet: ['figma', 'Sketch', 'Adobe XD','Illustrator', 'Photoshop', 'InVision','WordPress', 'Anywhere 365', '3D Animations'],
-        applicationDate: 'Applied 3 days ago',
-      },
-      {
-        image: "../../assets/unsplash_DBe29bswzpk.png",
-        companyName: "ABC Company",
-        jobLevel: "Senior Product designer",
-        country: "United Arab Emiates",
-        proposedSalary: 10000000,
-        skillSet: ['figma', 'Sketch', 'Adobe XD','Illustrator', 'Photoshop', 'InVision','WordPress', 'Anywhere 365', '3D Animations'],
-        applicationDate: 'Applied 3 days ago',
-      }
-     ]
 
-    // constructor(private jobService: jobService){
+  jobApplications: JobApplication[];
 
-    // }
-
-    ngOnInit(): void{
-      // this.jobApplication = this.jobService.getJobsApplication();
+    constructor(private jobListingService: JobListingService){
+      this.jobApplications = jobListingService.getJobApplications();
     }
+
+   
+    
+  searchText: string = ''; 
+  optionButton: string = 'All';
+  numberButton: number = 25;
+
+ 
+
+  onSearch(e: any){
+    this.jobListingService.onSearchTextEntered(this.searchText);
+  }
+
+  onFilter(e: any){
+    this.jobListingService.onFilterOptionChanged(this.optionButton);
+  }
+
+  onFilteredNum(e: any){
+    this.jobListingService.onFilterNumberChanged(this.numberButton);
+  }
+
+
+  ngOnInit() {
+    const numSenior = this.jobListingService.getSeniorLevel();
+    // console.log(`There are ${numSenior} senior job applications.`);
+  }
+    
 }

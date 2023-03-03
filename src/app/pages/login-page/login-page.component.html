@@ -1,20 +1,63 @@
 <main class="sign-up">
-    <div class="sign-up-center">
-        <h1 class="signup-h1">Application Tracker</h1>
-        <p class="signup-h1">Login to access and manage your job applications</p>
-        <br><br>
-        <form action="">
-            <label for="" class="label">Email Address</label><br>
-            <input type="text" class="sign-up-input" required><br><br>
+  <div class="sign-up-center">
+    <h1 class="signup-h1">Application Tracker</h1>
+    <p class="signup-h1">Login to access and manage your job applications</p>
+    <br /><br />
+    <form #loginForm="ngForm" (click)="proceedLogin(loginForm)">
+      <div class="email-div">
+        <label for="email" class="label">Email Address</label><br />
+        <input
+          type="email"
+          id="email"
+          class="sign-up-input"
+          ngModel
+          name="email"
+          required
+          email
+          #email="ngModel"
+        />
 
-            <label for="" class="label">Password</label>
-            <input type="password" class="sign-up-input" required><br>
+        <small class="help-block" *ngIf="!email.valid && email.touched">
+          Please enter a valid email
+        </small>
+      </div>
+      <br />
+      <div class="password-div">
+        <label for="password" class="label">Password</label>
+        <input
+          type="password"
+          id="password"
+          class="sign-up-input"
+          ngModel
+          
+          name="password"
+          required
+          #password="ngModel"
+        />
 
-            <div class="forget-password-div">
-                <button class="login-btn">Login</button>
-                <a routerLink="/forgot-password" class="forgot-password" style="color: #D62196">Forgot Password</a>
-                <p class="have-account">Don't have an account? <a routerLink="/signup" style="color: #D62196">Sign Up</a></p>
-            </div>
-        </form>
+        <small class="help-block" *ngIf="!password.valid && password.touched">
+          Incorrect password
+        </small>
+      </div>
+
+      <div class="forget-password-div">
+        <button class="login-btn" type="submit">
+          Login
+        </button>
+      </div>
+    </form>
+
+    <div class="forget-password-div">
+      <a
+        routerLink="/forgot-password"
+        class="forgot-password"
+        style="color: #d62196"
+        >Forgot Password</a
+      >
+      <p>
+        Don't have an account?
+        <a routerLink="/signup" style="color: #d62196">Sign Up</a>
+      </p>
     </div>
+  </div>
 </main>

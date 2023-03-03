@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatProgressBarModule} from '@angular/material/progress-bar'
 import {MatDialogModule} from '@angular/material/dialog'
@@ -27,9 +30,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PersonalInfoComponent } from './components/personal-info/personal-info.component';
 import { AboutMeEditComponent } from './components/about-me-edit/about-me-edit.component';
 import { WorkExperienceEditComponent } from './components/work-experience-edit/work-experience-edit.component';
-import { ProjectsEditComponent } from './components/projects-edit/projects-edit.component';
 import { EducationInfoEditComponent } from './components/education-info-edit/education-info-edit.component';
 import { DocumentsEditComponent } from './components/documents-edit/documents-edit.component';
+import { ProfileSection1Component } from './components/P.sections/profile-section1/profile-section1.component';
+import { AboutMeComponent } from './components/P.sections/about-me/about-me.component';
+import { WorkExpComponent } from './components/P.sections/work-exp/work-exp.component';
+import { ProjectsComponent } from './components/P.sections/projects/projects.component';
+import { EduHistoryComponent } from './components/P.sections/edu-history/edu-history.component';
+import { DocsComponent } from './components/P.sections/docs/docs.component';
+import { ValidationService } from './Service/validation.service';
+import { AccountCreatedComponent } from './pages/account-created/account-created.component';
 
 
 
@@ -58,19 +68,29 @@ import { DocumentsEditComponent } from './components/documents-edit/documents-ed
     PersonalInfoComponent,
     AboutMeEditComponent,
     WorkExperienceEditComponent,
-    ProjectsEditComponent,
     EducationInfoEditComponent,
-    DocumentsEditComponent
+    DocumentsEditComponent,
+    ProfileSection1Component,
+    AboutMeComponent,
+    WorkExpComponent,
+    ProjectsComponent,
+    EduHistoryComponent,
+    DocsComponent,
+    AccountCreatedComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
     MatProgressBarModule,
-    MatDialogModule
+    MatDialogModule,
+    NgbModule
   ],
-  providers: [],
+  providers: [ValidationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

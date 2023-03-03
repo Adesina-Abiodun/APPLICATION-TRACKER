@@ -1,0 +1,30 @@
+.account{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins';
+    color: #5E5873;
+}
+.account-middle{
+    height: 70vh;
+    text-align: center;
+}
+
+.successful{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.return{
+    background-color: #440F7C;
+    padding: 0.5vh 4vw;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

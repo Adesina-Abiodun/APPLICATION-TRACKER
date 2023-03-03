@@ -1,38 +1,68 @@
-<div class="personal-info-edit">
-    <h2>Product Designer</h2>
-    <h4>Personal Information</h4>
+<div
+  class="personal-info-edit"
+>
+  <div>
+      <div>
+          <h2 class="mat-dialog-title">Product Designer</h2>
+          <h5 class="mat-dialog-subtitle">Personal Information</h5>
+      </div>
 
-    <div class="personal-info-details-edit">
-        <div class="personal-info-div">
-            <label for="" class="personal-info">Profile picture:</label>
-            <label for="" class="personal-info">Full Name:</label>
-            <label for="" class="personal-info">Phone:</label>
-            <label for="" class="personal-info">Email:</label>
-            <label for="" class="personal-info">Birthday:</label>
-            <label for="" class="personal-info">Address:</label>
-            <label for="" class="personal-info">Gender:</label>
-            <label for="" class="personal-info">Location:</label>
-            <label for="" class="personal-info">Skills:</label>
-            <label for="" class="personal-info">Tools:</label>
-        </div>
-    
-        <div class="personal-info-input">
-            <input type="file">
-            <input type="text">
-            <input type="phone">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-        </div>
-    </div>
+      <div class="mat-dialog-content">
+          <div class="personal-info-details-edit form-group">
+            <div class="personal-info-div">
+              <label for="profileImg" class="personal-info">Profile img:</label>
+              <input type="file" name="profileImg"/>
+            </div>
 
-   
-    
-    <div class="personal-info-save-btn">
-        <button>Save Edit</button> 
-    </div>
+            <div class="personal-info-div">
+              <label for="fullName" class="personal-info">Full name:</label>
+              <input type="text" name="fullName" class="personal-info-input"/>
+            </div>
+
+            <div class="personal-info-div">
+              <label for="phone" class="personal-info">Phone:</label>
+              <input type="tel" name="phone" class="personal-info-input">            
+            </div>
+
+            <div class="personal-info-div">
+              <label for="email" class="personal-info">Email:</label>
+              <input type="email" name="email" class="personal-info-input">
+            </div>
+
+            <div class="personal-info-div">
+              <label for="birthday" class="personal-info">Birthday:</label>
+              <input type="date" name="birthday" class="personal-info-input" />
+            </div>
+
+            <div class="personal-info-div">
+              <label for="address" class="personal-info">Address:</label>
+              <input type="address" name="address" class="personal-info-input">
+            </div>
+
+            <div class="personal-info-div">
+              <label for="gender" class="personal-info">Gender:</label>
+              <input type="text" name="gender" class="personal-info-input">
+            </div>
+
+            <div class="personal-info-div">
+              <label for="Location" class="personal-info">Location:</label>
+              <input type="text" name="Location" class="personal-info-input" />
+            </div>
+
+            <div class="personal-info-div">
+              <label for="skills" class="personal-info">Skills:</label>
+              <input type="text" name="skills" class="personal-info-input">
+            </div>
+
+            <div class="personal-info-div">
+              <label for="tools" class="personal-info">Tools:</label>
+              <input type="text" name="tools" class="personal-info-input">
+            </div>
+          </div>
+
+          <div class="personal-info-save-btn mat-dialog-actions">
+            <button [mat-dialog-close]="true" type="submit">Save Edit</button>
+          </div>
+      </div>
+  </div>
 </div>

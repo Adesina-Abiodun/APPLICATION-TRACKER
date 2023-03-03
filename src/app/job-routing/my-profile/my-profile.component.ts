@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-// import { myApplication } from '../my-application/my-application.module';
+import { MatDialog } from '@angular/material/dialog';
+import { PersonalInfoComponent } from 'src/app/components/personal-info/personal-info.component';
+
 
 @Component({
   selector: 'app-my-profile',
@@ -7,10 +9,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-profile.component.css']
 })
 export class MyProfileComponent {
-  isOpen = false
- 
-  
-  openModal(){
-    this.isOpen = !this.isOpen
-  }
+
 }

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-personal-info',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./personal-info.component.css']
 })
 export class PersonalInfoComponent {
+
+ 
+
 
 }

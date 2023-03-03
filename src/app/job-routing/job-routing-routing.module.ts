@@ -7,6 +7,7 @@ import { MyApplicationComponent } from './my-application/my-application.componen
 import { MyHistoryComponent } from './my-history/my-history.component';
 import { MyOfferComponent } from './my-offer/my-offer.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
+import { AuthGuard } from '../Guard/auth.guard';
 
 const routes: Routes = [
   {path: '', component: JobPageComponent ,children : [
@@ -15,7 +16,7 @@ const routes: Routes = [
     {path: 'my-jobs', component: JobsComponent},
     {path: 'my-profile', component: MyProfileComponent},
     {path: 'my-history', component: MyHistoryComponent},
-]}];
+], canActivate:[AuthGuard]}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

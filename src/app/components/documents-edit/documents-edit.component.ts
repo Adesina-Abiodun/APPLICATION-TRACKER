@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./documents-edit.component.css']
 })
 export class DocumentsEditComponent {
+  isClose = false
 
+  closeModal(){
+    this.isClose = !this.isClose
+  }
 }

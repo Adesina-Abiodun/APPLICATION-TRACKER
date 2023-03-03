@@ -22,13 +22,14 @@
     display: flex;
     align-items: center;
     padding: 5px;
+    cursor: pointer;
 }
 
 img{
     padding-right: 10px;
 }
 
-a{
+.sidebar-item{
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -38,7 +39,7 @@ a{
     color: #D62196;
 }
 
-.progress-bar{
+.progress-bar-div{
     width: 100%;
     height: 10vh;
     margin-top: 20px;

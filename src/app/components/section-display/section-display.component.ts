@@ -1,5 +1,8 @@
 import { Component, OnDestroy } from '@angular/core';
 import { NavigationStart, Router, Event as NavigationEnd } from '@angular/router';
+import * as alertify from 'alertifyjs';
+import { window } from 'rxjs';
+
 
 @Component({
   selector: 'app-section-display',
@@ -18,30 +21,43 @@ export class SECTIONDISPLAYComponent {
       if (event instanceof NavigationStart){
           if( event.url == '/jobs/my-application'){
               this.isFilter = ['My Applications']
-              console.log(event.url)
             }
 
           else if( event.url == '/jobs/my-offer'){
             this.isFilter = ['My Offers']
-            console.log(event.url)
           }
 
           else if( event.url == '/jobs/my-jobs'){
             this.isFilter = ['Jobs']
-            console.log(event.url)
           }
 
           else if( event.url == '/jobs/my-profile'){
           this.isFilter = ['My Profile']
-          console.log(event.url)
         }
 
           else if( event.url == '/jobs/my-history'){
           this.isFilter = ['My History']
-          console.log(event.url)
         }
           else if( event.url == '/jobs'){
         this.isFilter = ['Jobs']
-        console.log(event.url)
         }
-  }}})}}
+  }
+}
+}
+)}
+
+
+openDialog(){
+  alertify.confirm('Logout', 'Do you want to logout?', function(){ alertify.success("See you soon...")}
+                , function(){}).set('onok', () =>{
+                  this.route.navigate(['']);
+                })
+                
+}
+
+
+
+  
+
+
+}

@@ -1,6 +1,6 @@
 
-
 export interface JobApplication{
+    id: Number,
     image: string,
     companyName: string,
     jobLevel: string,
