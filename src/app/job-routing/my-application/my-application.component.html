@@ -1,0 +1,59 @@
+<div class="container" *ngFor="let jobs of jobApplications">
+  <ng-container
+    *ngIf="
+      (numberButton === 25 ||
+        numberButton === 20 ||
+        numberButton === 15 ||
+        numberButton === 10 ||
+        numberButton == 5) &&
+      jobApplications.slice(0, numberButton)
+    "
+  >
+    <ng-container
+      *ngIf="optionButton === 'All' || optionButton === jobs.jobLevel"
+    >
+      <div
+        class="app-list"
+        *ngIf="
+          searchText === '' ||
+          jobs.companyName.toLowerCase().includes(searchText)
+        "
+      >
+        <a routerLink="/job-description">
+          <div class="job-logo">
+            <img src="{{ jobs.image }}" alt="" />
+            <div class="job-title">
+              <p class="companyName">{{ jobs.companyName }}</p>
+              <p class="role">{{ jobs.jobLevel }}</p>
+            </div>
+          </div>
+
+            <div class="job-location-salary">
+                <div class="location">
+                <img src="../../../assets/map-pin.png" alt="" />
+                <p>{{ jobs.country }}</p>
+                </div>
+
+                <div class="salary">
+                <p id="salary"><span>&#8358;</span>{{ jobs.proposedSalary }}</p>
+                </div>
+            </div>
+
+            <div class="job-tools-date">
+                    <div class="tools">
+                    <ul class="listed-tools">
+                        <li *ngFor="let subItem of jobs.skillSet">
+                        {{ subItem }}
+                        </li>
+                    </ul>
+                    </div>
+
+                <div class="date">
+                <p>{{ jobs.applicationDate }}</p>
+                </div>
+            </div>
+        </a>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>

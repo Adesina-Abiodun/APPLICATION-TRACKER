@@ -1,0 +1,125 @@
+.container{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06);
+    width: 50vw;
+    padding: 30px;
+    border-radius: 6px;
+    color: #5E5873;
+    font-family: 'Poppins';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 0.5s;
+    border-radius: 6px;
+    z-index: 1050;
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1040; 
+    backdrop-filter: blur(10px); /* Add a blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Add a blur effect for older webkit browsers */
+    transition: all ease 0.5s;
+  overflow: hidden;
+  }
+
+.work-experience{
+    width: 90%;
+    margin: 10px auto;
+}
+
+.work-experience form{
+    width: 100%;
+}
+
+.first-input-div, .second-input-div{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+
+.first-input-div input{
+    width: 45%;
+    padding: 10px;
+    border-radius: 5px;
+    /* border: 1px solid green; */
+}
+
+.second-input-div {
+    display: flex;
+    /* width: 45%; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    /* border: 1px solid green; */
+}
+
+.second-input-div label{
+    font-weight: lighter;
+    font-size: 10px;
+}
+
+.start-date-input, .end-date-input{
+    width: 48%;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+
+}
+
+.start-date-input input, .end-date-input input{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #5E5873;
+    border-radius: 5px;
+}
+
+.personal-info-save-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-info-save-btn .save-btn{
+    background: #440F7C;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .personal-info-save-btn .save-btn:hover{
+    color: #FFFFFF;
+    background-color: green;
+  }
+
+
+  .add-work{
+    border: 1px solid #D62196;
+    background-color: #F7D3EA;
+    color: #D62196;
+    border-radius: 5px;
+    /* border: none; */
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .add-work::before{
+    content: "+ ";
+  }
+  

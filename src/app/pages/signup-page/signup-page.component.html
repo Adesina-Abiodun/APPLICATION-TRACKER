@@ -1,1 +1,86 @@
-<p>signup-page works!</p>
+<main class="sign-up">
+  <div class="sign-up-center">
+    <h1 class="signup-h1">Sign Up</h1>
+    <br /><br />
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="email-div">
+        <label for="email" class="label">Email Address</label><br />
+        <input
+          type="text"
+          id="email"
+          class="sign-up-input"
+          formControlName="email"
+        />
+        <span
+          class="text-danger"
+          *ngIf="(registerFormControl['email'].touched || submitted) && registerFormControl['email'].errors?.['required']"
+        >
+          Email is required
+        </span>
+        <span
+          class="text-danger"
+          *ngIf="registerFormControl['email'].touched && registerFormControl['email'].errors?.['email']"
+        >
+          Enter a valid email address
+        </span>
+      </div>
+      <br />
+
+      <div class="password-div">
+        <label for="password" class="label">Password</label>
+        <input
+          type="password"
+          id="password"
+          class="sign-up-input"
+          formControlName="password"
+        />
+
+        <span
+          class="text-danger"
+          *ngIf="(registerFormControl['password'].touched || submitted) && registerFormControl['password'].errors?.['required']"
+        >
+          Password is required
+        </span>
+        <span
+          class="text-danger"
+          *ngIf="registerFormControl['password'].touched && registerFormControl['password'].errors?.['invalidPassword']"
+        >
+          Password should have minimum 8 characters, at least 1 uppercase
+          letter, 1 lowercase letter and 1 number
+        </span>
+      </div>
+      <br />
+
+      <div class="password div">
+        <label for="comfirm-password" class="label">Confirm Password</label>
+        <input
+          type="password"
+          id="confirm-password"
+          class="sign-up-input"
+          formControlName="confirmPassword"
+        />
+
+        <span
+          class="text-danger"
+          *ngIf="(registerFormControl['confirmPassword'].touched || submitted)&& registerFormControl['confirmPassword'].errors?.['required']"
+        >
+          Confirm Password is required
+        </span>
+        <span
+          class="text-danger"
+          *ngIf="registerFormControl['confirmPassword'].touched && registerFormControl['confirmPassword'].errors?.['passwordMismatch']"
+        >
+          Passwords doesnot match
+        </span>
+      </div>
+
+      <div class="forget-password-div">
+        <button class="sign-up-btn" type="submit">Sign up</button>
+      </div>
+    </form>
+    <div class="existing-user">
+      <p class="have-account">Already a User?</p>
+      <a routerLink="" style="color: #d62196">Login</a>
+    </div>
+  </div>
+</main>

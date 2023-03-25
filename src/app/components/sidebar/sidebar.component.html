@@ -27,7 +27,7 @@
                 routerLinkActive="active"
                 class="sidebar-item">
                 <img src="../../../assets/check-circle (1).png" alt="Job-icon">
-                <p>My Job</p>
+                <p>Jobs</p>
             </a>
         </div>
 
@@ -53,11 +53,20 @@
     
         <div class="log-out">
             <a 
-                routerLink="/login-page"
-                routerLinkActive="active">
+                class="sidebar-item"
+                (click)="openDialog()">
                 <img src="../../assets/power (1).png" alt="Logout-icon">
                 <p>Logout</p>
             </a>
         </div>
     </div>
 </div>
+
+<div class="progress-bar-div" *ngIf="isFilter">
+    <p>Your profile is 100% complete</p>
+
+    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-danger" style="width: 50%">50%</div>
+      </div>
+</div>
+

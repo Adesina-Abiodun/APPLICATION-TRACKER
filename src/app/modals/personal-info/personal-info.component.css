@@ -1,0 +1,98 @@
+/* .personal-info-edit{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06);
+    margin: 10px auto;
+    width: 40vw;
+    height: 100vh;
+    padding: 15px;
+    border-radius: 6px;
+    font-family: 'poppins';
+} */
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1040; 
+  backdrop-filter: blur(10px); /* Add a blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Add a blur effect for older webkit browsers */
+  transition: all ease 0.5s;
+overflow: hidden;
+}
+
+
+.personal-info-edit {
+  width: 35vw;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all ease 0.5s;
+  padding: 15px;
+  border-radius: 6px;
+  font-family: 'poppins';
+  z-index: 1050;
+}
+
+
+.mat-dialog-title{
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.mat-dialog-subtitle{
+  font-weight: 600;
+  font-size: 19px
+}
+
+/* .mat-dialog-content{
+  max-height: 1059px; 
+  overflow-y: auto; 
+} */
+
+
+.personal-info-div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.personal-info-input{
+  width: 60%;
+  padding: 10px;
+}
+
+
+label:after {
+    content:" *";
+    color: red;
+  }
+
+
+
+  .personal-info-save-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .personal-info-save-btn button{
+    background: #440F7C;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .personal-info-save-btn button:hover{
+    color: #FFFFFF;
+    background-color: green;
+  }
+
+  

@@ -1,41 +1,53 @@
-<div class="container">
+<div class="container" *ngIf="isFilter">
     <div class="number section-height"> 
-        <select name="" id="">
-            <option value="">No</option>
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
+        <select name="" id="" [(ngModel)]="selectByNo" (click)="onNumberChanged()">
+            <option value="">All</option>
+            <option value="5" >5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
         </select>
     </div>
 
     <div class="recent section-height"> 
-        <select name="" id="">
+        <select name="" id="" [(ngModel)]="selectByRecent">
             <option value="">Recent</option>
         </select>
     </div>
 
     <div class="search-bar section-height">
         <img src="../../assets/Vector.png" alt="">
-        <input type="text" placeholder="Search">
+        <input type="text" placeholder="Search" [(ngModel)]="searchText" (input)="onSearchTextChanged($event)">
     </div>
 
     <div class="category section-height"> 
-        <select name="" id="">
+        <select name="" id="" [(ngModel)]="selectByCategory" (change)="onOptionChanged()">
             <option value="">By Category</option>
+            <option value="All">All</option>
+            <option value="Senior Level Product Designer">Senior Level</option>
+            <option value="intermediate Product Designer">Intermediate level</option>
+            <option value="junior Level Product Designer">Junior level</option>
         </select>
     </div> 
 
     <div class="reading section-height"> 
-        <select name="" id="">
-            <option value="">By Reading</option>
+        <select name="" id="" [(ngModel)]="selectByRating">
+            <option value="">By Rating</option>
+            <option value="">By Rating</option>
+            <option value="">By Rating</option>
         </select>
     </div> 
 
     <div class="tag section-height"> 
-        <select name="" id="">
+        <select name="" id="" [(ngModel)]="selectByTags">
             <option value="">By Tag</option>
+            <option value="">Figma</option>
+            <option value="">Sketch</option>
+            <option value="">Illustrator</option>
+            <option value="">Photoshop</option>
+            <option value="">InVision</option>
+            <option value="">Adobe XD</option>
         </select>
     </div>
 
